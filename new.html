@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="./myscript.js"></script>
+</head>
+<body>
+    <marquee onmouseover="stop()" onmouseout="start()" scrollamount="50">
+        <h2><u>Student Registraion form</u></h2>
+    </marquee>
+    <div  class="container">
+    
+            <form>
+                <table class="tab">
+                <tr> 
+                    <th><label class="lab">First Name:</label></th>
+                    <td><input class="text" type="text" placeholder="Enter your first name"></td>
+                </tr>
+                <tr> 
+                    <th><label class="lab">Last Name:</label></th>
+                    <td><input class="text" type="text" placeholder="Enter your last name"><br>
+                    </td>
+                </tr>
+                <tr> 
+                    <th><label class="lab">Email:</label></th>
+                    <td><input class="text" type="email" placeholder="It should contain @"></td>
+                </tr>
+                <tr>
+                    <th><label class="lab">Mobile:</label>
+                    </th>
+                    <td><input class="text" type="number" placeholder="Only 10 digits allowed"></td>
+                </tr>
+                <tr>
+                    <th><label class="lab">Gender:</label></th>
+                    <td><input class="radio" type="radio" value="Male" name="Gender">Male
+                        <input class="radio" type="radio" value="Female" name="Gender">Female
+                        <input class="radio" type="radio" value="Female" name="Gender">Trans
+                    
+                    </td>
+                
+
+                </tr>
+                <tr>
+                    <th><label class="lab">Date of Birth:</label></th>
+                    <td><input class="text" type="date"></td>
+                </tr>
+                <tr>
+                    <th><label class="lab">Address:</label></th>
+                    <td><textarea class="text" name="Address" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <th><label class="lab">City:</label></th>
+                    <td><input class="text" type="text"></td>
+                </tr>
+                <tr>
+                    <th><label class="lab">Area pin:</label></th>
+                    <td><input class="text" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label class="lab">State:</label></th>
+                    <td><input class="text" type="text"></td>
+                </tr>
+                <tr>
+                    <th><label for="qualification" class="lab">Qualification:</label></th>
+                    <td><select name="qualification" class="text">
+                        <option value="sel">Select qualification</option>
+                        <option value="10">10</option>
+                        <option value="plus2">Plus 2</option>
+                        <option value="ug">UG</option>
+                        <option value="pg">PG</option>
+                        <option value="phd">PHD</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <th><label for="special" class="lab">Specialization:</label></th>
+                    <td>
+                        <input type="checkbox" class="ch1" value="cs">Computer Science<br>
+                        <input type="checkbox" class="ch1" value="it">Information Technology<br>
+                        <input type="checkbox" class="ch1" value="ca">Computer Architecture<br>
+                        <input type="checkbox" class="ch1" value="tc">Tele Communication
+                    </td> 
+                
+                </tr>
+                <tr>
+                    <th><label class="lab">Password:</label></th>
+                    <td><input class="text" type="password"></td>
+                </tr>
+                
+            </table>
+            <button onclick="cllick()">Register</button>
+            </form>
+</div>
+</body>
+</html>
