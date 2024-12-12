@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Document</title>
+</head>
+
+<body>
+    <div>
+        <h1 align="center"><b>JavaScript</b></h1>
+    </div>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla voluptas odio perferendis asperiores
+        dolorum voluptate cupiditate adipisci. Incidunt, labore laborum explicabo aspernatur vitae ea illo vero totam
+        quidem ratione?
+    </div>
+    <div>
+        &nbsp;<input type="button" value="String" onclick="showMath()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Math Object" onclick="showStr()">&nbsp;
+    </div>
+    <div id="string" style="display: none;">
+        <h2>oifhiashvid</h2>
+        <h2>oifhiashvid</h2>
+        <h2>oifhiashvid</h2>
+        <h4 style="color: yellowgreen;">string</h4>
+    </div>
+
+    <div id="math" style="display: none;">
+        <h2>oifhiashvid</h2>
+        <h2>oifhiashvid</h2>
+        <h2>oifhiashvid</h2>
+        <h2>oifhiashvid</h2>
+        <h2>oifhiashvid</h2>
+        <h2>oifhiashvid</h2>
+        <h2>oifhiashvid</h2>
+        <h2>oifhiashvid</h2>
+        <h2>oifhiashvid</h2>
+        <h4 style="color: yellow;">mathobj</h4>
+    </div>
+
+</body>
+
+<script>
+    function showMath() {
+        mathDiv = document.getElementById("math");
+        stringg = document.getElementById("string");
+        stringg.style.display = 'none';
+        mathDiv.style.display = 'block';
+        mathDiv.style.backgroundColor = "#FF0000";
+
+    }
+    function showStr() {
+        mathDiv = document.getElementById("math");
+        stringg = document.getElementById("string");
+        stringg.style.display = 'block';
+        mathDiv.style.display = 'none';
+        stringg.style.backgorundColor = "#f0f0f0";
+
+    }
+</script>
+
+</html>
